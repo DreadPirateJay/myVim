@@ -18,17 +18,11 @@ set autoread
 " Fast saving
 nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>
-
-" Saving in insert mode
 imap :w<CR> <Esc>:w<CR>
-
-" Fat finger saving
-imap :W<CR> <Esc>:w<CR>
 nmap :W<CR> :w<CR>
 
-" Use jj or kk to exit insert mode
+" Use jj to exit insert mode
 imap jj <Esc>
-imap kk <Esc>
 
 
 "******************************************************************************
@@ -175,13 +169,3 @@ nnoremap <silent> <F4> :TagbarToggle<CR>
 
 " map <Leader>p to NERDTree
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
-
-"******************************************************************************
-" HTML Auto Close Tags
-"******************************************************************************
-if has('win32') || has('win64')
-	au FileType html,php,xhtml,xml so $HOME\vimfiles\bundle\html_autoclosetag\html_autoclosetag.vim
-else
-	au FileType html,php,xhtml,xml so $HOME/.vim/bundle/html_autoclosetag/html_autoclosetag.vim
-endif
-

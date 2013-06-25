@@ -10,9 +10,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/sbd"]
-	path = bundle/sbd
-	url = https://github.com/orftz/sbd.vim.git
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
@@ -25,3 +22,6 @@
 [submodule "bundle/railscasts-theme"]
 	path = bundle/railscasts-theme
 	url = https://github.com/jpo/vim-railscasts-theme.git
+[submodule "bundles/sbd"]
+	path = bundles/sbd
+	url = git://github.com/ollummis/sbd.vim.git
